@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trabajo - NewCooltura Informada",
+  title: "Trabajo Chile - Derechos Laborales | NewCooltura Informada",
   description: "Inspecciones del Trabajo, contratos, calculadora de sueldo liquido y derechos laborales en Chile",
+  keywords: ["trabajo Chile", "sueldo liquido", "contratos", "derechos laborales", "inspeccion trabajo"],
+  openGraph: {
+    title: "Trabajo Chile - NewCooltura Informada",
+    description: "Contratos, sueldos y derechos laborales",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
